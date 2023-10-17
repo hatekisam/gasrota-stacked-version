@@ -4,13 +4,17 @@ import 'package:grasrota/ui/views/home/home_view.dart';
 import 'package:grasrota/ui/views/startup/startup_view.dart';
 import 'package:stacked/stacked_annotations.dart';
 import 'package:stacked_services/stacked_services.dart';
+import 'package:grasrota/ui/views/register/register_view.dart';
+import 'package:grasrota/ui/views/profile/profile_view.dart';
 // @stacked-import
 
 @StackedApp(
   routes: [
     MaterialRoute(page: HomeView),
     MaterialRoute(page: StartupView),
-    // @stacked-route
+    MaterialRoute(page: RegisterView),
+    MaterialRoute(page: ProfileView),
+// @stacked-route
   ],
   dependencies: [
     LazySingleton(classType: BottomSheetService),
